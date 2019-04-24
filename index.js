@@ -19,8 +19,8 @@ function getGender (name, lang = 'all') {
     it: itMap,
     all: new Map([...itMap, ...enMap])
   }
-  // Use the Map of input language
-  const mapToUse = maps[lang]
+  // Use the Map of input language, or use all
+  const mapToUse = maps[lang] || maps.all
   // Get the gender from the input language Map, or try with all, otherwise is unknown
   const result = mapToUse.get(name) || maps.all.get(name) || 'unknown'
   return result

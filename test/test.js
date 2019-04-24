@@ -26,6 +26,18 @@ describe('Tests for Gender detection from name', () => {
       assert.strictEqual(getGender(name, 'it'), 'female')
     }
   })
+  it('should return male for some names with wrong language', () => {
+    const names = ['Dave', 'John', 'Giacomo', 'George', 'Luca']
+    for (let name of names) {
+      assert.strictEqual(getGender(name, 'de'), 'male')
+    }
+  })
+  it('should return female for some names with wrong language', () => {
+    const names = ['Anna', 'Jennifer', 'Lisa', 'Marta', 'Catherine']
+    for (let name of names) {
+      assert.strictEqual(getGender(name, 'de'), 'female')
+    }
+  })
   it('should return male for some names with no language', () => {
     const names = ['Dave', 'John', 'Giacomo', 'George', 'Luca']
     for (let name of names) {
