@@ -5,6 +5,7 @@ const itNames = require('./names/it')
  * Gender detection from first name and optional language
  * @param {String} name First name
  * @param {String} [lang] Language
+ * @returns {String} male, female, unknown
  */
 function main (name, lang = 'all') {
   if (!name) {
