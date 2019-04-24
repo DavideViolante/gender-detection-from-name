@@ -1,4 +1,4 @@
-const enNames = [
+const enNames = new Map([
   [ 'aabriella', 'female' ],
   [ 'aadam', 'male' ],
   [ 'aadan', 'male' ],
@@ -32509,6 +32509,6 @@ const enNames = [
   [ 'zyrus', 'male' ],
   [ 'zyshaun', 'male' ],
   [ 'zyshawn', 'male' ]
-]
+])
 
 module.exports = enNames
