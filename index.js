@@ -2,8 +2,9 @@ const enNames = require('./names/en')
 const itNames = require('./names/it')
 
 /**
+ * Gender detection from first name and optional language
  * @param {String} name First name
- * @param {String} lang Language (optional)
+ * @param {String} [lang] Language
  */
 function main (name, lang = 'all') {
   // Lowercase name and lang to make the match
