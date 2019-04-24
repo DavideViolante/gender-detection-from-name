@@ -38,4 +38,16 @@ describe('Tests for Gender detection from name', () => {
       assert.strictEqual(genderDetection(name), 'female')
     }
   })
+  it('should return unknown for unknown names', () => {
+    const names = ['Asdfgh', 'I do not exist', 'None']
+    for (let name of names) {
+      assert.strictEqual(genderDetection(name), 'unknown')
+    }
+  })
+  it('should return unknown for empty string, undefined or null', () => {
+    const names = ['', undefined, null]
+    for (let name of names) {
+      assert.strictEqual(genderDetection(name), 'unknown')
+    }
+  })
 })

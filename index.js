@@ -7,6 +7,9 @@ const itNames = require('./names/it')
  * @param {String} [lang] Language
  */
 function main (name, lang = 'all') {
+  if (!name) {
+    return 'unknown'
+  }
   // Lowercase name and lang to make the match
   name = name.toLowerCase()
   lang = lang.toLowerCase()
