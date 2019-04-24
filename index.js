@@ -7,7 +7,7 @@ const itMap = require('./names/it')
  * @param {String} [lang] Language
  * @returns {String} male, female, unknown
  */
-function main (name, lang = 'all') {
+function genderFromName (name, lang = 'all') {
   if (!name) {
     return 'unknown'
   }
@@ -26,4 +26,4 @@ function main (name, lang = 'all') {
   return result
 }
 
-module.exports = main
+exports.genderFromName = genderFromName
