@@ -17,7 +17,7 @@ function main (name, lang = 'all') {
   const maps = {
     en: enMap,
     it: itMap,
-    all: new Map([...enMap, ...itMap])
+    all: new Map([...itMap, ...enMap])
   }
   // Use the Map of input language
   const mapToUse = maps[lang]
