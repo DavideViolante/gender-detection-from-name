@@ -3,12 +3,12 @@ This simple project detects the gender of a first name. An optional language par
 
 ### Example
 ```js
-const { genderFromName } = require('gender-detection-from-name')
+const { getGender } = require('gender-detection-from-name')
 
 function main() {
-  const genderEN = genderFromName('Andrea', 'en')
-  const genderIT = genderFromName('Andrea', 'it')
-  const gender = genderFromName('Jennifer')
+  const genderEN = getGender('Andrea', 'en')
+  const genderIT = getGender('Andrea', 'it')
+  const gender = getGender('Jennifer')
   console.log(genderEN) // female
   console.log(genderIT) // male
   console.log(gender) // female
@@ -17,3 +17,6 @@ function main() {
 
 ### Run tests
 - `npm test`
+
+### Run lint
+- `npm run lint`
