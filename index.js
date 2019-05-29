@@ -13,7 +13,7 @@ function getGender (name, lang = 'all') {
   }
   // Lowercase name and lang to make the match
   name = name.toLowerCase()
-  lang = lang.toLowerCase()
+  lang = (lang || 'all').toLowerCase()
   const maps = {
     en: enMap,
     it: itMap,

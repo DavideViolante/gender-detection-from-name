@@ -56,10 +56,26 @@ describe('Tests for Gender detection from name', () => {
       assert.strictEqual(getGender(name), 'unknown')
     }
   })
-  it('should return unknown for empty string, undefined or null', () => {
+  it('should return unknown for null names', () => {
     const names = ['', undefined, null]
     for (let name of names) {
       assert.strictEqual(getGender(name), 'unknown')
     }
+  })
+  it('should return male for known name with null lang', () => {
+    const langs = ['', undefined, null]
+    for (let lang of langs) {
+      assert.strictEqual(getGender('Dave', lang), 'male')
+    }
+  })
+  it('should return unknown for null name and lang', () => {
+    assert.strictEqual(getGender(''), 'unknown')
+    assert.strictEqual(getGender('', ''), 'unknown')
+    assert.strictEqual(getGender('', null), 'unknown')
+    assert.strictEqual(getGender('', undefined), 'unknown')
+    assert.strictEqual(getGender(null, ''), 'unknown')
+    assert.strictEqual(getGender(undefined, ''), 'unknown')
+    assert.strictEqual(getGender(null, undefined), 'unknown')
+    assert.strictEqual(getGender(undefined, null), 'unknown')
   })
 })
