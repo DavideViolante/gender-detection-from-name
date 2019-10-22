@@ -966,7 +966,6 @@ const itNames = new Map([
   [ 'nina', 'female' ],
   [ 'noah', 'male' ],
   [ 'noemi', 'female' ],
-  [ 'nome', 'GENERE' ],
   [ 'nora', 'female' ],
   [ 'nour', 'female' ],
   [ 'nour eddine', 'male' ],
