@@ -1,5 +1,5 @@
-const assert = require('assert')
-const { getGender } = require('../index')
+import assert from 'assert'
+import getGender from '../index.js'
 
 describe('Tests for Gender detection from name', () => {
   it('should return male for some english male names', () => {

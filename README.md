@@ -8,7 +8,7 @@ Library to detect the gender of a first name. An optional language parameter can
 
 ### Example
 ```js
-const { getGender } = require('gender-detection-from-name')
+import getGender from 'gender-detection-from-name'
 
 const genderEN = getGender('Andrea', 'en')
 const genderIT = getGender('Andrea', 'it')

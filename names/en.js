@@ -1,4 +1,4 @@
-const enNames = new Map([
+const enMap = new Map([
   ['aabriella', 'female'],
   ['aadam', 'male'],
   ['aadan', 'male'],
@@ -32512,4 +32512,4 @@ const enNames = new Map([
   ['zyshawn', 'male']
 ])
 
-module.exports = enNames
+export default enMap

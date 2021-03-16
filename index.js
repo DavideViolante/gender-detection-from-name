@@ -1,5 +1,5 @@
-const enMap = require('./names/en')
-const itMap = require('./names/it')
+import enMap from './names/en.js'
+import itMap from './names/it.js'
 
 /**
  * Gender detection from first name and optional language
@@ -26,4 +26,4 @@ function getGender (name, lang = 'all') {
   return result
 }
 
-exports.getGender = getGender
+export default getGender
