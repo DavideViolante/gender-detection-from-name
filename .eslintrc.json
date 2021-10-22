@@ -1,18 +1,18 @@
 {
   "env": {
-    "es6": true,
+    "commonjs": true,
+    "es2021": true,
     "node": true,
     "mocha": true
   },
-  "extends": "standard",
-  "globals": {
-    "Atomics": "readonly",
-    "SharedArrayBuffer": "readonly"
-  },
+  "extends": "google",
   "parserOptions": {
-    "ecmaVersion": 2018,
-    "sourceType": "module"
+    "ecmaVersion": 12
   },
   "rules": {
+    "object-curly-spacing": [
+      "error", "always"
+    ],
+    "space-infix-ops": "error"
   }
 }

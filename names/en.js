@@ -32509,7 +32509,7 @@ const enNames = new Map([
   ['zyron', 'male'],
   ['zyrus', 'male'],
   ['zyshaun', 'male'],
-  ['zyshawn', 'male']
-])
+  ['zyshawn', 'male'],
+]);
 
-module.exports = enNames
+module.exports = enNames;

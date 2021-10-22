@@ -4278,7 +4278,7 @@ const itNames = new Map([
   ['diletta', 'female'],
   ['cosimo', 'male'],
   ['gianmarco', 'male'],
-  ['carola', 'female']
-])
+  ['carola', 'female'],
+]);
 
-module.exports = itNames
+module.exports = itNames;
