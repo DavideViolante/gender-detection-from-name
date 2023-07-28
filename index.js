@@ -1,5 +1,6 @@
 const enMap = require('./names/en');
 const itMap = require('./names/it');
+const esMap = require('./names/es');
 
 /**
  * Gender detection from first name and optional language
@@ -17,7 +18,8 @@ function getGender(name, lang = 'all') {
   const maps = {
     en: enMap,
     it: itMap,
-    all: new Map([...itMap, ...enMap]),
+    es: esMap,
+    all: new Map([...itMap, ...enMap, ...esMap]),
   };
   // Use the Map of input language, or use all
   const mapToUse = maps[lang] || maps.all;
