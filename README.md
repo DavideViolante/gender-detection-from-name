@@ -14,17 +14,25 @@ const { getGender } = require('gender-detection-from-name');
 
 const genderEN = getGender('Andrea', 'en');
 const genderIT = getGender('Andrea', 'it');
+const genderES = getGender('Andrea', 'es');
 const gender = getGender('Jennifer');
 console.log(genderEN); // female
 console.log(genderIT); // male
+console.log(genderES); // male
 console.log(gender); // female
 ```
+
+### Supported languages
+`en`, `it`, `es`
 
 ### Run tests
 ```npm test```
 
 ### Run lint
 ```npm run lint```
+
+### Contribute
+Feel free to contribute to this project to add more names in different languages.
 
 ### Author
 - [Davide Violante](https://github.com/DavideViolante/)
