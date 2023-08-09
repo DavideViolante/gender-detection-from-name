@@ -15,15 +15,17 @@ const { getGender } = require('gender-detection-from-name');
 const genderEN = getGender('Andrea', 'en');
 const genderIT = getGender('Andrea', 'it');
 const genderES = getGender('Andrea', 'es');
+const genderFR = getGender('Andrea', 'fr');
 const gender = getGender('Jennifer');
 console.log(genderEN); // female
 console.log(genderIT); // male
 console.log(genderES); // male
+console.log(genderFR); // male
 console.log(gender); // female
 ```
 
 ### Supported languages
-`en`, `it`, `es`
+`en`, `it`, `es`, `fr`
 
 ### Run tests
 ```npm test```
