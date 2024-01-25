@@ -16,16 +16,18 @@ const genderEN = getGender('Andrea', 'en');
 const genderIT = getGender('Andrea', 'it');
 const genderES = getGender('Andrea', 'es');
 const genderFR = getGender('Andrea', 'fr');
+const genderDE = getGender('Andrea', 'de');
 const gender = getGender('Jennifer');
 console.log(genderEN); // female
 console.log(genderIT); // male
 console.log(genderES); // male
 console.log(genderFR); // male
+console.log(genderDE); // female
 console.log(gender); // female
 ```
 
 ### Supported languages
-`en`, `it`, `es`, `fr`
+`en`, `it`, `es`, `fr`, `de`
 
 ### Run tests
 ```npm test```
