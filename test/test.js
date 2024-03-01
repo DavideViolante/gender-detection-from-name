@@ -14,18 +14,6 @@ describe('Tests for Gender detection from name', () => {
       assert.strictEqual(getGender(name, 'en'), 'female');
     }
   });
-  it('should return male for some german male names', () => {
-    const names = ['Fabian', 'Alexander', 'Thomas', 'Maximilian', 'Moritz'];
-    for (const name of names) {
-      assert.strictEqual(getGender(name, 'de'), 'male');
-    }
-  });
-  it('should return female for some german female names', () => {
-    const names = ['Leonie', 'Lena', 'Sarah', 'Nina', 'Julia'];
-    for (const name of names) {
-      assert.strictEqual(getGender(name, 'de'), 'female');
-    }
-  });
   it('should return male for some italian male names', () => {
     const names = ['Davide', 'Federico', 'Giacomo', 'Giorgio', 'Andrea'];
     for (const name of names) {
@@ -62,20 +50,32 @@ describe('Tests for Gender detection from name', () => {
       assert.strictEqual(getGender(name, 'fr'), 'female');
     }
   });
-  it('should return male for some names with wrong language', () => {
-    const names = ['Dave', 'John', 'Giacomo', 'George', 'Luca'];
+  it('should return male for some german male names', () => {
+    const names = ['Fabian', 'Alexander', 'Thomas', 'Maximilian', 'Moritz'];
     for (const name of names) {
       assert.strictEqual(getGender(name, 'de'), 'male');
+    }
+  });
+  it('should return female for some german female names', () => {
+    const names = ['Leonie', 'Lena', 'Sarah', 'Nina', 'Julia'];
+    for (const name of names) {
+      assert.strictEqual(getGender(name, 'de'), 'female');
+    }
+  });
+  it('should return male for some names with wrong language', () => {
+    const names = ['Dave', 'John', 'Giacomo', 'George', 'Luke'];
+    for (const name of names) {
+      assert.strictEqual(getGender(name, 'jp'), 'male');
     }
   });
   it('should return female for some names with wrong language', () => {
     const names = ['Anna', 'Jennifer', 'Lisa', 'Marta', 'Catherine'];
     for (const name of names) {
-      assert.strictEqual(getGender(name, 'de'), 'female');
+      assert.strictEqual(getGender(name, 'jp'), 'female');
     }
   });
   it('should return male for some names with no language', () => {
-    const names = ['Dave', 'John', 'Giacomo', 'George', 'Luca'];
+    const names = ['Dave', 'John', 'Giacomo', 'George', 'Luke'];
     for (const name of names) {
       assert.strictEqual(getGender(name), 'male');
     }
