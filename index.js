@@ -14,22 +14,31 @@ function getGender(name, lang = 'all') {
   if (!name) {
     return 'unknown';
   }
+
   // Lowercase name and lang to make the match
   name = name.toLowerCase();
   lang = (lang || 'all').toLowerCase();
+
   const maps = {
     en: enMap,
     it: itMap,
     es: esMap,
     fr: frMap,
     de: deMap,
-    all: new Map([...itMap, ...enMap, ...esMap, ...frMap, ...deMap]),
   };
-  // Use the Map of input language, or use all
-  const mapToUse = maps[lang] || maps.all;
-  // Get the gender from the language Map or try with all, otherwise is unknown
-  const result = mapToUse.get(name) || maps.all.get(name) || 'unknown';
-  return result;
+
+  const mapToUse = maps[lang];
+  const primaryResult = mapToUse ? mapToUse.get(name) : null;
+
+  return (
+    primaryResult ||
+    deMap.get(name) ||
+    frMap.get(name) ||
+    esMap.get(name) ||
+    enMap.get(name) ||
+    itMap.get(name) ||
+    'unknown'
+  );
 }
 
 exports.getGender = getGender;
