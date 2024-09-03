@@ -3,7 +3,7 @@
 
 [![NPM](https://nodei.co/npm/gender-detection-from-name.png)](https://nodei.co/npm/gender-detection-from-name/)
 
-Library to detect the gender of a first name. An optional language parameter can be specified to improve the detection, for example: Andrea in EN is female, in IT is male. If no language is specified, EN has priority.
+Library to detect the gender of a first name. An optional language parameter can be specified to improve the detection, for example: Andrea in EN is female, in IT is male. If no language is specified, all languages are considered. (issue #92)
 
 ### Install
 `npm i gender-detection-from-name`
@@ -17,17 +17,19 @@ const genderIT = getGender('Andrea', 'it');
 const genderES = getGender('Andrea', 'es');
 const genderFR = getGender('Andrea', 'fr');
 const genderDE = getGender('Andrea', 'de');
+const genderTR = getGender('Radife', 'tr');
 const gender = getGender('Jennifer');
 console.log(genderEN); // female
 console.log(genderIT); // male
 console.log(genderES); // male
 console.log(genderFR); // male
 console.log(genderDE); // female
+console.log(genderTR); // female
 console.log(gender); // female
 ```
 
 ### Supported languages
-`en`, `it`, `es`, `fr`, `de`
+`en`, `it`, `es`, `fr`, `de`, `tr`
 
 ### Run tests
 ```npm test```
