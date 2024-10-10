@@ -24217,8 +24217,8 @@ const enNames = new Map([
   ['oisin', 'male'],
   ['ojani', 'male'],
   ['ojas', 'male'],
-  ['ojasva', 'male'],
-  ['ojasvi', 'female']
+      ['ojasva', 'male'],
+      ['ojasvi', 'female'],
   ['okairy', 'female'],
   ['oksana', 'female'],
   ['oktober', 'female'],
