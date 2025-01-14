@@ -1,6 +1,6 @@
 {
   "name": "gender-detection-from-name",
-  "version": "1.11.1",
+  "version": "1.11.2",
   "description": "Gender detection from first name",
   "main": "index.js",
   "scripts": {
@@ -27,9 +27,9 @@
   },
   "homepage": "https://github.com/DavideViolante/gender-detection-from-name#readme",
   "devDependencies": {
-    "eslint": "^8.57.0",
+    "eslint": "^8.57.1",
     "eslint-config-google": "^0.14.0",
     "mocha": "^11.0.1",
-    "nyc": "^17.0.0"
+    "nyc": "^17.1.0"
   }
 }
