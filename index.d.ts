@@ -3,5 +3,5 @@ declare module "gender-detection-from-name" {
   export function getGender(
     name: string,
     lang?: Language,
-  ): string;
+  ): "male" | "female" | "unknown";
 }
