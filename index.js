@@ -34,12 +34,12 @@ function getGender(name, lang = 'all') {
 
   return (
     primaryResult ||
-    trMap.get(name) ||
-    deMap.get(name) ||
-    frMap.get(name) ||
-    esMap.get(name) ||
     enMap.get(name) ||
     itMap.get(name) ||
+    esMap.get(name) ||
+    frMap.get(name) ||
+    deMap.get(name) ||
+    trMap.get(name) ||
     'unknown'
   );
 }
