@@ -1,6 +1,6 @@
 {
   "name": "gender-detection-from-name",
-  "version": "1.11.5",
+  "version": "1.11.6",
   "description": "Gender detection from first name",
   "main": "index.js",
   "scripts": {
@@ -29,7 +29,7 @@
   "devDependencies": {
     "eslint": "^8.57.1",
     "eslint-config-google": "^0.14.0",
-    "mocha": "^11.1.0",
-    "nyc": "^17.1.0"
+    "mocha": "^12.0.2",
+    "nyc": "^18.0.0"
   }
 }
